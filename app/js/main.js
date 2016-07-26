@@ -31,7 +31,6 @@ function subscribe() {
   then(function(pushSubscription){
     sub = pushSubscription;
     console.log('Subscribed! Endpoint:', sub.endpoint);
-    alert(sub.endpoint);
     subscribeButton.textContent = 'Unsubscribe';
     isSubscribed = true;
   });
