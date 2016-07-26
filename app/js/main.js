@@ -30,7 +30,8 @@ function subscribe() {
   reg.pushManager.subscribe({userVisibleOnly: true}).
   then(function(pushSubscription){
     sub = pushSubscription;
-    console.log('Subscribed! Endpoint:' + sub.endpoint);
+    console.log('length of the url:', sub.endpoint.length());
+    console.log('Subscribed! Endpoint:' , sub.endpoint);
     subscribeButton.textContent = 'Unsubscribe';
     isSubscribed = true;
   });
