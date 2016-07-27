@@ -1,5 +1,7 @@
 'use strict';
 
+alert('soooomethinnnngg');
+
 var reg;
 var sub;
 var isSubscribed = false;
