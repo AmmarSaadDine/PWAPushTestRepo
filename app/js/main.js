@@ -27,6 +27,7 @@ subscribeButton.addEventListener('click', function() {
 });
 
 function subscribe() {
+  alert('before subscribtion');
   reg.pushManager.subscribe({userVisibleOnly: true}).
   then(function(pushSubscription){
     sub = pushSubscription;
