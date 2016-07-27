@@ -35,6 +35,7 @@ function subscribe() {
     //var jsonObj = { 'enpoint url' : sub.enpoint };
     //var endpointStr = JSON.stringify(jsonObj);
     alert(sub.Endpoint);
+    alert('soooomethinnnngg');
     console.log('Subscribed! Endpoint:' , sub.enpoint);
     subscribeButton.textContent = 'Unsubscribe';
     isSubscribed = true;
