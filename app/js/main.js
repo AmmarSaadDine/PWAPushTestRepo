@@ -1,7 +1,5 @@
 'use strict';
 
-alert('soooomethinnnngg');
-
 var reg;
 var sub;
 var isSubscribed = false;
@@ -34,10 +32,6 @@ function subscribe() {
   reg.pushManager.subscribe({userVisibleOnly: true}).
   then(function(pushSubscription){
     sub = pushSubscription;
-    //var jsonObj = { 'enpoint url' : sub.enpoint };
-    //var endpointStr = JSON.stringify(jsonObj);
-    alert(sub.Endpoint);
-    alert('soooomethinnnngg');
     console.log('Subscribed! Endpoint:' , sub.enpoint);
     subscribeButton.textContent = 'Unsubscribe';
     isSubscribed = true;
@@ -53,4 +47,8 @@ function unsubscribe() {
     console.log('Error unsubscribing', error);
     subscribeButton.textContent = 'Subscribe';
   });
+}
+
+function doObjCThing() {
+  document.location = 'adjust://applauncehd';
 }
