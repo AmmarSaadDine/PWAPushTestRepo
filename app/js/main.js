@@ -50,5 +50,9 @@ function unsubscribe() {
 }
 
 function doObjCThing() {
-  document.location = 'adjust://applauncehd';
+  var adjustEvent = new AdjustEvent('abc123')
+  adjustEvent.addPartnerParameter('key', 'value')
+  adjustEvent.addPartnerParameter('foo', 'bar')
+
+  Adjust.trackEvent(adjustEvent)
 }
