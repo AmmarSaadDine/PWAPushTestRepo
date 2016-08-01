@@ -1,5 +1,5 @@
 'use strict';
-
+var appToken = 'admcmy1zd91c';
 var reg;
 var sub;
 var isSubscribed = false;
@@ -55,4 +55,13 @@ function doObjCThing() {
   adjustEvent.addPartnerParameter('foo', 'bar')
 
   Adjust.trackEvent(adjustEvent)
+}
+
+function adjustAndroidStart() {
+
+  var yourAppToken = appToken;
+  var environment = AdjustConfig.EnvironmentSandbox;
+  var adjustConfig = new AdjustConfig(AdjustBridge, yourAppToken, environment);
+
+  Adjust.onCreate(adjustConfig);
 }
