@@ -65,3 +65,4 @@ var Adjust = {
 };
 
 // module.exports = Adjust;
+var mybestvar = 'asdfasdfasdf';
