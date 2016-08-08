@@ -3,15 +3,15 @@ function AdjustConfig(bridge, appToken, environment) {
     this.appToken = appToken;
     this.environment = environment;
 
-    this.sdkPrefix = 'web-bridge4.7.0';
+    this.sdkPrefix = 'web-bridge4.8.0';
 
     this.logLevel = null;
-    this.processName = null;
     this.defaultTracker = null;
 
     this.sendInBackground = null;
     this.openDeferredDeeplink = null;
     this.eventBufferingEnabled = null;
+    this.webBridgeLoggingEnabled = null;
 
     this.attributionCallback = null;
     this.eventSuccessCallback = null;
@@ -71,6 +71,10 @@ AdjustConfig.prototype.setOpenDeferredDeeplink = function(shouldOpen) {
     this.openDeferredDeeplink = shouldOpen;
 };
 
+AdjustConfig.prototype.setWebBridgeLoggingEnabled = function(isEnabled) {
+    this.webBridgeLoggingEnabled = isEnabled;
+};
+
 AdjustConfig.prototype.setLogLevel = function(logLevel) {
     this.logLevel = logLevel;
 };
@@ -106,3 +110,5 @@ AdjustConfig.prototype.setSessionFailureCallback = function(callback) {
 AdjustConfig.prototype.setDeferredDeeplinkCallback = function(callback) {
     this.deferredDeeplinkCallback = callback;
 };
+
+//module.exports = AdjustConfig;

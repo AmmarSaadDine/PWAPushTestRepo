@@ -24,4 +24,8 @@ AdjustEvent.prototype.addPartnerParameter = function(key, value) {
     this.partnerParameters.push(value);
 };
 
-// module.exports = AdjustEvent;
+AdjustEvent.prototype.setTransactionId = function(transactionId) {
+    this.transactionId = transactionId;
+};
+
+//module.exports = AdjustEvent;
