@@ -111,4 +111,4 @@ AdjustConfig.prototype.setDeferredDeeplinkCallback = function(callback) {
     this.deferredDeeplinkCallback = callback;
 };
 
-//module.exports = AdjustConfig;
+// module.exports = AdjustConfig;

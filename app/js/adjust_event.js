@@ -28,4 +28,4 @@ AdjustEvent.prototype.setTransactionId = function(transactionId) {
     this.transactionId = transactionId;
 };
 
-//module.exports = AdjustEvent;
+// module.exports = AdjustEvent;

@@ -61,7 +61,7 @@ var Adjust = {
 
     getIdfa: function (callback) {
         if (this.bridge != null) {
-            this.bridge.callHandler('adjust_idfa', null, function(response) {
+            this.bridge.callHandler('', null, function(response) {
                 callback(response)
             })
         }
@@ -72,6 +72,14 @@ var Adjust = {
             this.bridge.callHandler('adjust_appWillOpenUrl', url, null)
         }
     }
+    
+    getDeviceType: function (callback) {
+        if (this.bridge != null) {
+            this.bridge.callHandler('adjust_getDeviceType', null, function(response) {
+                callback(response)
+            })
+        }
+    }
 };
 
-//module.exports = Adjust;
+// module.exports = Adjust;
