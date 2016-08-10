@@ -1,4 +1,8 @@
 var Adjust = {
+    device: {
+        model:null,
+        type:null
+    }, 
     appDidLaunch: function (adjustConfig) {
         this.bridge = adjustConfig.getBridge();
 
@@ -70,14 +74,6 @@ var Adjust = {
     appWillOpenUrl: function (url) {
         if (this.bridge != null) {
             this.bridge.callHandler('adjust_appWillOpenUrl', url, null)
-        }
-    },
-    
-    getDeviceType: function (callback) {
-        if (this.bridge != null) {
-            this.bridge.callHandler('adjust_getDeviceType', null, function(response) {
-                callback(response)
-            })
         }
     }
 };
