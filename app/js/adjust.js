@@ -71,7 +71,7 @@ var Adjust = {
         if (this.bridge != null) {
             this.bridge.callHandler('adjust_appWillOpenUrl', url, null)
         }
-    }
+    },
     
     getDeviceType: function (callback) {
         if (this.bridge != null) {
