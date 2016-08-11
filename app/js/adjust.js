@@ -1,7 +1,8 @@
 var Adjust = {
     device: {
-        model:null,
-        type:null
+        modelName:null,
+        hardwareType:null,
+        modelSeries:null
     }, 
     appDidLaunch: function (adjustConfig) {
         this.bridge = adjustConfig.getBridge();
