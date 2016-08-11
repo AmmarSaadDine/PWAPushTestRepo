@@ -1,9 +1,12 @@
 var Adjust = {
     device: {
         modelName:null,
+        modelSeries:null,
         hardwareType:null,
-        modelSeries:null
-    }, 
+        manufacturer:null,
+        displaySize:null,
+        appVersion:null
+    },
     appDidLaunch: function (adjustConfig) {
         this.bridge = adjustConfig.getBridge();
 
@@ -66,7 +69,7 @@ var Adjust = {
 
     getIdfa: function (callback) {
         if (this.bridge != null) {
-            this.bridge.callHandler('', null, function(response) {
+            this.bridge.callHandler('adjust_idfa', null, function(response) {
                 callback(response)
             })
         }
@@ -79,4 +82,4 @@ var Adjust = {
     }
 };
 
-// module.exports = Adjust;
+module.exports = Adjust;
