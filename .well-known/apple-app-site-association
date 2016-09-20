@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "92UNL35DF8.com.rocketinternet.ritracking.example",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}
